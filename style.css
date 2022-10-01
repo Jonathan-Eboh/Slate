@@ -1,0 +1,409 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* header {
+    height: 60px;
+    width: 100%;
+    background: yellow;
+  } */
+
+body {
+  margin-left: 7px;
+  margin-top: 5px;
+}
+
+
+html{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main {
+  height: 700px;
+  width: 60%;
+  float: left;
+}
+
+.topMain {
+  height: 350px;
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+.yellowText{
+  color: yellow;
+}
+
+.topTextL{
+  width: 50%;
+  height: 350px;
+  float: left;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.topTextL .bigText {
+  font-size: 2rem;
+}
+
+.topTextR{
+  height: 350px;
+  width: 50%;
+  /* background: yellow; */
+  float: right;
+}
+
+
+.topTextR span{
+  margin-left: 85px;
+  justify-content: center;
+}
+
+
+.transitionStackTop {
+  height: 85px;
+  margin-bottom: 5px;
+  contain: content;
+}
+
+.transitionStack {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 5px;
+  float: left;
+  contain: content;
+}
+
+.bottomMain {
+  height: 350px;
+  width: 100%;
+  float: left;
+  padding: 10px; 
+}
+
+.slatePlus {
+ height: 50px;
+ width: 60%;
+ float: left;
+ background: lightgray;
+}
+
+.btmMainContainerL {
+  height: 320px;
+  width: 25%;
+  float: left;
+  margin-top: 5px;
+  float: left;
+}
+
+.left {
+  height: 115px;
+  width: 100%;
+  float: left;
+  background-image: url(road_crack.PNG);
+  background-repeat: no-repeat;
+}
+
+.left2 {
+  height: 115px;
+  width: 100%;
+  float: left;
+  font-size: 1.2rem;
+  padding: 9px;
+  border:2px solid lightgray;
+}
+
+
+.btmMainContainerR {
+  height: 320px;
+  width: 50%;
+  float: right;
+  margin-top: 5px;
+}
+
+.right{
+  height: 100px;
+  width: 100%;
+  float: right;
+  border:2px solid lightgray;
+}
+
+.right p{
+  font-size: 1.5rem;
+}
+
+.right span {
+  font-size: .9rem;
+  color: gray;
+}
+
+.right2{
+  height: 128px;
+  width: 100%;
+  float: right;
+  border:2px solid lightgray;
+  background: rgb(102, 0, 51);
+  color: white;
+}
+
+.right2 p{
+  font-size: 1.5rem;
+}
+
+.right2 span{
+  font-size: .9rem;
+}
+
+.mostRecent {
+    height: 900px;
+    width: 38%;
+    float: right;
+    margin-right: 12px;
+}
+
+.stackTop {
+  height: 90px;
+  width: 100%;
+  float: left;
+  color: white;
+  
+}
+
+.tallStack {
+  float: left;
+}
+
+.tallStack span {
+  color: Darkgray;
+}
+
+.topSplit1 {
+  height: 60px; 
+  width: 100%;
+  background: rgb(102, 0, 51);
+}
+
+.topSplit1 span {
+  font-size: 3.5rem;
+}
+
+.topSplit2 {
+  height: 30px;
+  width: 100%;
+  background: rgb(40, 27, 33);
+}
+
+.topSplit2 span  {
+  font-size: 1.2rem;
+}
+
+
+.topSplit2 span + span {
+  font-size: 1.2rem;
+  float: right;
+}
+
+
+.stack {
+  height: 90px;
+  width: 100%;
+  padding: 18px;
+  contain: content;
+  float: left;
+  border:2px solid lightgray;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.devOutline {
+  /* outline: 3px solid blue; */
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+
+
+@media (min-width: 0px) and (max-width:766px){
+  
+ 
+body {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+ header span{
+    display: none;
+  }
+
+
+  header nav {
+    display: none;
+  }
+
+  .mostRecent{
+      width: 100%;
+      margin-right: 0px;
+  }
+
+   main{
+    width: 100%;
+    
+  }
+
+  .topMain{
+  height: 350px;
+  width: 100%;
+  background-image: url(Trump_img_1.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+
+  .slatePlus {
+  width: 100%;
+}
+ 
+}
+  
+
+
+@media (min-width: 767px) and (max-width:1023px){
+  
+
+  header nav {
+    display: none;
+  }
+
+  header span{
+    display: none;
+  }
+
+   main{
+    width: 60%;
+  }
+
+  .topMain{
+  height: 350px;
+  width: 100%;
+  background-image: url(Trump_img_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  
+}
+ 
+
+@media screen and (min-width: 1024px){
+
+  header {
+    height: 60px;
+    width: 100%;
+    background: darkgray;
+    float: left;
+    padding: 8px;
+    border: 3px solid black;
+  }
+
+  
+  header span{
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+
+   header nav {
+    
+    display: inline;
+   
+  }
+
+  
+
+header nav li {
+    /* height: 10px; */
+    background: white;
+    /* width: 20px; */
+    display: inline;
+    border: 3px solid black;
+    /* text-decoration: none; */
+    margin: 18px;
+    margin-left: 68px;
+}
+
+   header nav li a {
+    /* height: 10px;
+    background: white;
+    width: 20px;
+    display: inline;
+    border: 3px solid black; */
+    text-decoration: none;
+    margin: 89px;
+   
+  }
+
+  .mostRecent{
+    width: 38%;
+  }
+
+  .topMain{
+  height: 350px;
+  width: 100%;
+  background-image: url(Trump_img_3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  
+}
+
+
+/* @media screen and (max-width:0){
+  
+ 
+  
+}
+
+@media screen and (max-width: 767px){
+  
+     .mostRecent{
+    display: none;
+  }
+
+  main{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  
+  
+} */
