@@ -1,0 +1,2 @@
+# Slate
+ version for hosting
