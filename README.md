@@ -1,14 +1,5 @@
 # Slate
 
-
-
-
-
-
-Slate front end! 
-
-I had a really good time with this project and using Floats to make this was a really worthwhile exercise!
-
 ![Slate-preview](https://user-images.githubusercontent.com/23227549/194102823-753bb84f-d35c-4c06-b0a4-19edf6d0c82f.png)
 
 Link to project: https://void-slate-example.netlify.app/
